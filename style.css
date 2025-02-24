@@ -1,0 +1,144 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* Fundo da tela será cinza */
+    color: #fff; /* Texto em branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #000; /* Fundo preto para o container de login */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.title h2 {
+    text-align: center;
+    color: #fff; /* Texto branco para o título */
+}
+
+.terms-privacy {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.terms-privacy a {
+    color: #0079d3;
+    text-decoration: none;
+}
+
+.login-box {
+    margin-top: 20px;
+}
+
+/* Ajuste no tamanho e borda arredondada dos botões */
+button {
+    width: 100%;
+    padding: 10px;  /* Aumentei o padding um pouco para ajustar o tamanho */
+    font-size: 14px; /* Tamanho da fonte ajustado */
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    border-radius: 25px; /* Borda mais arredondada */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;  /* Ajustei o espaçamento entre os botões */
+    background-color: #fff; /* Fundo branco nos botões */
+    color: #333; /* Texto escuro */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f2f2f2; /* Fundo mais claro ao passar o mouse */
+}
+
+/* Estilo dos ícones nos botões */
+button img.icon {
+    width: 18px; /* Ajustei o tamanho do ícone */
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Botão de telefone */
+.phone-btn {
+    border: 2px solid #f1f1f1;
+}
+
+/* Botão do Google */
+.google-btn {
+    border: 2px solid #333;
+    color: #333;
+}
+
+/* Botão da Apple */
+.apple-btn {
+    border: 2px solid #333;
+    color: #333;
+}
+
+/* Estilo do botão de login */
+.login-btn {
+    background-color: #303030; /* Cor de fundo cinza inicialmente */
+    color: #fff; /* Texto branco */
+    font-weight: normal;
+    text-align: center;
+    border-radius: 25px; /* Arredondando o botão de login */
+    cursor: not-allowed; /* Cursor para mostrar que o botão está inativo */
+    pointer-events: none; /* Desativa o botão quando não está ativo */
+    padding: 10px;  /* Padding ajustado para o botão */
+}
+
+/* Quando ambos os campos forem preenchidos, ativa o botão */
+.login-btn.active {
+    background-color: #ff5e00; /* Cor laranja */
+    cursor: pointer; /* Cursor normal quando o botão estiver ativo */
+    pointer-events: auto; /* Habilita o botão quando estiver ativo */
+}
+
+/* Estilos de input */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;  /* Ajustei o padding para não ficar grande */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #0079d3;
+    outline: none;
+}
+
+/* Estilos do "OU" */
+.or {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin: 15px 0;
+}
+
+/* Links de recuperação de senha e criação de conta */
+.forgot-password, .signup {
+    text-align: center;
+    font-size: 12px;
+    color: #3f3f3f;
+}
+
+.forgot-password a, .signup a {
+    color: #0079d3;
+    text-decoration: none;
+}

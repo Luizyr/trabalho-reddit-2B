@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Reddit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Título "Entrar" centralizado -->
+        <div class="title" style="text-align: center; display: flex; justify-content: center; align-items: center; height: 50px; width: 100%; line-height: 50px;">
+            <h2>Entrar</h2>
+        </div>
+
+        <!-- Texto de Termos e Privacidade -->
+        <div class="terms-privacy">
+            <p>Ao continuar, concordas com os nossos <a href="#">Termos de Utilizador</a> e confirmas que compreendes a <a href="#">Política de Privacidade</a>.</p>
+        </div>
+
+        <div class="login-box">
+            <!-- Botão de login com telefone -->
+            <button type="button" class="phone-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/15/15874.png" alt="Ícone de celular" class="icon">
+                Continuar com o número de telefone
+            </button>
+
+            <!-- Botão de login com Google -->
+            <button type="button" class="google-btn">
+                <img src="https://developers.google.com/identity/images/g-logo.png" alt="Ícone Google" class="icon">
+                Continuar com o Google
+            </button>
+
+            <!-- Botão de login com Apple -->
+            <button type="button" class="apple-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Ícone Apple" class="icon">
+                Continuar com a Apple
+            </button>
+
+            <div class="or">
+                <span>OU</span>
+            </div>
+
+            <!-- Campos de email e senha -->
+            <form action="#">
+                <div class="input-group" style="max-width: 95%;"> <input type="text" style="border-radius: 16px; background-color: #a6a6a6;" style="border-radius: 16px;" id="username" placeholder="Email ou nome de utilizador *" required>
+                </div>
+                <div class="input-group" style="max-width: 95%;"> <input type="password" style="border-radius: 16px; background-color: #a6a6a6;" style="border-radius: 16px;" id="password" placeholder="Senha *" required>
+                </div>
+
+                <!-- Botão de Login -->
+                <button type="submit" class="login-btn" style="display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; height: 50px;">Entrar</button>
+
+                <!-- Links para senha e cadastro -->
+                <div class="forgot-password" style="text-align: left;">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <div class="signup">
+                    <p>Primeira vez no Reddit? <a href="#">Cria uma conta</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
